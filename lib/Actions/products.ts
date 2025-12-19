@@ -71,3 +71,6 @@ export async function createProduct(formdata: FormData) {
     }
     redirect('/inventory');
 }
+
+
+// let arr : [number, number, number, string, boolean] = [1,2,3,'str', true]

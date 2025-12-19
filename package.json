@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npx prisma generate && next build",
+    "postinstall": "npx prisma generate",
     "start": "next start",
     "lint": "eslint",
     "db:seed": "prisma db seed"
@@ -12,15 +13,16 @@
   "dependencies": {
     "@prisma/adapter-pg": "^7.0.1",
     "@prisma/client": "^7.1.0",
+    "@prisma/client-runtime-utils": "^7.2.0",
     "@stackframe/stack": "^2.8.52",
     "lucide-react": "^0.555.0",
-    "next": "16.0.5",
+    "next": "16.0.10",
     "nextjs-toploader": "^3.9.17",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-hot-toast": "^2.6.0",
     "recharts": "^3.5.1",
-    "zod": "^4.1.13"
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
