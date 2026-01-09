@@ -11,7 +11,7 @@ async function PopulateData() {
 
   // Create Sample Data
   await prisma.products.createMany({
-    data: Array.from({ length: 50 }).map((_, i) => ({
+    data: Array.from({ length: 200 }).map((_, i) => ({
       userId: demoUserId,
       name: `Product ${i + 101}`,
       price: (Math.random() * 90 + 10).toFixed(2),

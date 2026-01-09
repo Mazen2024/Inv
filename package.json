@@ -14,7 +14,7 @@
     "@prisma/adapter-pg": "^7.0.1",
     "@prisma/client": "^7.1.0",
     "@prisma/client-runtime-utils": "^7.2.0",
-    "@stackframe/stack": "^2.8.52",
+    "@stackframe/stack": "^2.8.56",
     "lucide-react": "^0.555.0",
     "next": "16.0.10",
     "nextjs-toploader": "^3.9.17",
